@@ -197,7 +197,7 @@ section {
 }
 
 .work-item img {
-    width: 100%;
+    width: 50%;
     height: 150px;
     object-fit: cover;
 }
@@ -346,6 +346,18 @@ blockquote {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.music-card.featured img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-card.featured img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .book-card.featured:hover, .music-card.featured:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -368,7 +380,7 @@ blockquote {
 }
 
 .featured-article img {
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -386,21 +398,21 @@ blockquote {
 
 .featured-content p {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.read-more {
+.read-link {
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.read-more:hover {
+.read-link:hover {
     color: #0056b3;
 }
 
 .articles-grid {
-    flex: 3;
+    flex: 15;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -426,7 +438,7 @@ blockquote {
 }
 
 .blog-post h2 {
-    padding: 10px;
+    padding: 10px 0px 10px;
     font-size: 1.5rem;
 }
 
@@ -434,7 +446,7 @@ blockquote {
 .sidebar {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -454,4 +466,3 @@ blockquote {
     from { opacity: 0; transform: translateX(-100%); }
     to { opacity: 1; transform: translateX(0); }
 }
-
